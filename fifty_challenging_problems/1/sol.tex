@@ -1,0 +1,30 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage{graphicx,amssymb,amstext,amsmath}
+
+\begin{document}
+
+\title{solution}
+\author{Fabien Le Mentec}
+
+\maketitle
+
+Let R and B be the red and black sock count in the bag.
+We are told that the probability to get 2 red socks successively is 0.5.
+This can be expressed as:
+\[
+\frac{R}{R+B} \times \frac{R-1}{R-1+B} = \frac{1}{2}
+\]
+
+Developping the above expression, we get:
+\[
+B^2 + 2 \times R \times B - B - R^2 + R = 0
+\]
+
+Possible solutions for this equation are computede by the main.cc program.
+For instance, having B = 6 results in the following equation:
+
+\[ - R^2 + 13 \times R + 30 = 0 \]
+
+which has R = 15 as a valid solution.
+
+\end{document}
